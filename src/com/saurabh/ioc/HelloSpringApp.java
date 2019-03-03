@@ -11,9 +11,11 @@ public class HelloSpringApp {
 		System.out.println(coach.getDailyWorkout());
 		System.out.println(coach.getDailyFortune());
 		
-		Coach cricketCoach = context.getBean("cricketCoach", Coach.class);
+		CricketCoach cricketCoach = context.getBean("cricketCoach", CricketCoach.class);
 		System.out.println(cricketCoach.getDailyWorkout());
 		System.out.println(cricketCoach.getDailyFortune());
+		System.out.println(cricketCoach.getEmailAddress());
+		System.out.println(cricketCoach.getName());
 		context.close();
 
 	}
